@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="select-container">
+            <div class="select-custom">
+                <span class="selected" opt-val="opcion1">Opción Activa</span>
+                <span class="option" opt-val="opcion1">Opción 1</span>
+                <span class="option" opt-val="opcion2">Opción 2</span>
+                <span class="option" opt-val="opcion3">Opción 3</span>
+                <span class="option" opt-val="opcion4">Opción 4</span>
+                <span class="option" opt-val="opcion5">Opción 5</span>
+            </div>
+            <div class="arrow-down">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor"
+                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+            </div>
+        </div>
+        <div class="form-submit-btn">Enviar</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
