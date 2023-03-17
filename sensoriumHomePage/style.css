@@ -1,0 +1,194 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#backgroundVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+}
+nav {
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+}
+nav .brand {
+    display: flex;
+    align-items: center;
+}
+nav .brand span {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+nav .menu {
+    margin-left: auto;
+}
+nav .menu ul {
+    display: flex;
+    align-items: center;
+}
+nav .menu ul li + li {
+    margin-left: 1.5rem;
+}
+nav .menu ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+nav .menu ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.prenav {
+    font-size: 0.75rem;
+    padding: 0.5rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.prenav .contact {
+    display: flex;
+    align-items: center;
+}
+.prenav .contact i {
+    margin-right: 0.5rem;
+}
+.prenav .contact div + div {
+    margin-left: 1rem;
+}
+.prenav .social-media {
+    margin-left: auto;
+    font-size: 1.15rem;
+}
+.prenav .social-media a {
+    color: #fff;
+}
+.prenav .social-media a + a {
+    margin-left: 1.5rem;
+}
+
+.intro-title {
+    color: #fff;
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+.intro-title div {
+    margin: 2.5rem 0;
+}
+.intro-title div span {
+    text-transform: capitalize;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.intro-title div:nth-child(1) {
+    font-size: 4.5rem;
+}
+.intro-title div:nth-child(2) {
+    font-size: 4rem;
+}
+
+.intro-title div:nth-child(3) {
+    font-size: 3.5rem;
+}
+
+.arrow-down {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%, -50%);
+    animation: arrow-down-intro 2s ease-out forwards, arrow-bounce 1s 2s linear infinite reverse;
+}
+
+.title {
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 8rem 0 4rem 0;
+    text-transform: uppercase;
+}
+section.products {
+    background-color: #000;
+    text-align: center;
+}
+footer {
+    background: #000;
+    padding: 1rem 5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+footer .right-part {
+    margin-left: auto;
+}
+
+footer .left-part .copyright {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgb(70, 67, 67);
+}
+footer .right-part ul {
+    display: flex;
+    align-items: center;
+}
+
+footer .right-part ul li + li {
+    margin-left: 1.1rem;
+}
+footer .right-part ul li a {
+    color: rgb(70, 67, 67);
+    transition: color 0.5s ease;
+}
+footer .right-part ul li a:hover {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+@keyframes arrow-down-intro {
+    from {
+        opacity: 0;
+        bottom: 0;
+    }
+    to {
+        bottom: -15px;
+        opacity: 1;
+    }
+}
+@keyframes arrow-bounce {
+    from {
+        bottom: -15px;
+    }
+    to {
+        bottom: -10px;
+    }
+}
