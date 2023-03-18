@@ -10,7 +10,9 @@ $('.select-container').click(function () {
     $(this).find(".select-custom .option").slideToggle();
 });
 
-$('.form .form-submit-btn').click(function () {
-    let val = $(".form .select-custom .selected").attr("opt-val");
-    alert("Enviando el valor: " + val);
+$('.selector .submit-btn').click(function () {
+    let val = $(".selector .select-custom .selected").attr("opt-val");
+    if (val) {
+        alert("Enviando el valor: " + val.toUpperCase());
+    }
 })
